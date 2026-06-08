@@ -31,35 +31,35 @@ public class mainframe extends javax.swing.JFrame {
         if(satuanAsal=="Celcius"&&satuanTujuan=="Celcius"){
             hasil=suhuAsal;
         }else if(satuanAsal=="Celcius"&&satuanTujuan=="Reamur"){
-            hasil = 0.8*suhuAsal;
+            hasil = 4.0/5.0*suhuAsal;
         }else if(satuanAsal=="Celcius"&&satuanTujuan=="Kelvin"){
             hasil = suhuAsal+273.15;
         }else if(satuanAsal=="Celcius"&&satuanTujuan=="Fahrenheit"){
-            hasil = (1.8*suhuAsal)+32;
+            hasil = (9.0/5.0*suhuAsal)+32;
         }else if(satuanAsal=="Reamur"&&satuanTujuan=="Reamur"){
             hasil = suhuAsal;
         }else if(satuanAsal=="Reamur"&&satuanTujuan=="Celcius"){
-            hasil = 1.25*suhuAsal;
+            hasil = 5.0/4.0*suhuAsal;
         }else if(satuanAsal=="Reamur"&&satuanTujuan=="Kelvin"){
-            hasil = (1.25*suhuAsal)+273.15;
+            hasil = (5.0/4.0*suhuAsal)+273.15;
         }else if(satuanAsal=="Reamur"&&satuanTujuan=="Fahrenheit"){
-            hasil = (2.25*suhuAsal)+32;
+            hasil = (9.0/4.0*suhuAsal)+32;
         }else if(satuanAsal=="Kelvin"&&satuanTujuan=="Kelvin"){
             hasil = suhuAsal;
         }else if(satuanAsal=="Kelvin"&&satuanTujuan=="Celcius"){
             hasil = suhuAsal-273.15;
         }else if(satuanAsal=="Kelvin"&&satuanTujuan=="Reamur"){
-            hasil = 0.8*(suhuAsal-273.15);
+            hasil = 4.0/5.0*(suhuAsal-273.15);
         }else if(satuanAsal=="Kelvin"&&satuanTujuan=="Fahrenheit"){
-            hasil = (1.8*(suhuAsal-273.15))+32;
+            hasil = (9.0/5.0*(suhuAsal-273.15))+32;
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Fahrenheit"){
             hasil = suhuAsal;
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Celcius"){
-            hasil = 0.56*(suhuAsal-32);
+            hasil = 5.0/9.0*(suhuAsal-32);
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Reamur"){
-            hasil = 0.44*(suhuAsal-32);
+            hasil = 4.0/9.0*(suhuAsal-32);
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Kelvin"){
-            hasil = (0.56*(suhuAsal-32))+273.15;
+            hasil = (5.0/9.0*(suhuAsal-32))+273.15;
         }
         String derajat=satuanTujuan.substring(0,1); //mengambil indeks ke 0 , panjangnya 1 karakter
         thasil.setText(String.valueOf(hasil)+"\u00B0"+derajat);
