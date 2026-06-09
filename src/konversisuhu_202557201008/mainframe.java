@@ -62,7 +62,7 @@ public class mainframe extends javax.swing.JFrame {
             hasil = (5.0/9.0*(suhuAsal-32))+273.15;
         }
         String derajat=satuanTujuan.substring(0,1); //mengambil indeks ke 0 , panjangnya 1 karakter
-        thasil.setText(String.valueOf(hasil)+"\u00B0"+derajat);
+        thasil.setText(String.format("%.2f",hasil)+"\u00B0"+derajat);
     }
 
     /**
