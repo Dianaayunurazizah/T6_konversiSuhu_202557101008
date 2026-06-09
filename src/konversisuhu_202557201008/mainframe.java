@@ -55,9 +55,9 @@ public class mainframe extends javax.swing.JFrame {
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Fahrenheit"){
             hasil = suhuAsal;
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Celcius"){
-            hasil = 5.0/9.0*(suhuAsal-32);
+            hasil = 9.0/5.0*(suhuAsal-32);
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Reamur"){
-            hasil = 4.0/9.0*(suhuAsal-32);
+            hasil = 9.0/4.0*(suhuAsal-32);
         }else if(satuanAsal=="Fahrenheit"&&satuanTujuan=="Kelvin"){
             hasil = (5.0/9.0*(suhuAsal-32))+273.15;
         }
